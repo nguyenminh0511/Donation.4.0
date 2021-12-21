@@ -114,11 +114,11 @@
         android:layout_centerHorizontal="true" />
 
     <TextView
+        android:id="@+id/totalSoFar"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textAppearance="?android:attr/textAppearanceMedium"
-        android:text="@string/totalSoFar"
-        android:id="@+id/totalSoFar"
         android:layout_alignTop="@+id/textView"
-        android:layout_alignEnd="@+id/paymentMethod" />
+        android:layout_alignEnd="@+id/paymentMethod"
+        android:text="@string/totalSoFar"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
 </RelativeLayout>
