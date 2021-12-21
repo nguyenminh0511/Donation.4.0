@@ -1,14 +1,15 @@
-package ie.app;
+package ie.app.activities;
 
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.app.Activity;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
+
 import ie.app.R;
+
 public class Report extends AppCompatActivity
 {
     ListView listView;

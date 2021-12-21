@@ -5,7 +5,7 @@ android {
     buildToolsVersion "23.0.1"
 
     defaultConfig {
-        applicationId "ie.app"
+        applicationId "ie.app.activities"
         minSdkVersion 19
         //noinspection ExpiredTargetSdkVersion
         targetSdkVersion 23
