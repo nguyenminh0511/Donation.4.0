@@ -18,11 +18,10 @@ public class Base extends AppCompatActivity {
     public final int target = 10000;
     public int totalDonated = 0;
     public static List<Donation> donations = new ArrayList<>();
-    public boolean newDonation(Donation donation)
-    {
+
+    public boolean newDonation(Donation donation) {
         boolean targetAchieved = totalDonated > target;
-        if (!targetAchieved)
-        {
+        if (!targetAchieved) {
             donations.add(donation);
             totalDonated += donation.amount;
         }
@@ -33,14 +32,15 @@ public class Base extends AppCompatActivity {
         }
         return targetAchieved;
     }
+
     @Override
-    public boolean onCreateOptionsMenu(Menu menu)
-    {
+    public boolean onCreateOptionsMenu(Menu menu) {
         getMenuInflater().inflate(R.menu.menu_donate, menu);
         return true;
     }
+
     @Override
-    public boolean onPrepareOptionsMenu (Menu menu){
+    public boolean onPrepareOptionsMenu (Menu menu) {
         super.onPrepareOptionsMenu(menu);
         MenuItem report = menu.findItem(R.id.menuReport);
         MenuItem donate = menu.findItem(R.id.menuDonate);
