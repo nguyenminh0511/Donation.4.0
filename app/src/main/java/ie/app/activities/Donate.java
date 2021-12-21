@@ -83,9 +83,10 @@ public class Donate extends Base {
 
     @Override
     public void reset(MenuItem item) {
+        app.dbManager.reset();
         app.totalDonated = 0;
         progressBar.setProgress(app.totalDonated);
         String totalDonatedStr = "$" + app.totalDonated;
-        amountTotal.setText(totalDonatedStr);;
+        amountTotal.setText(totalDonatedStr);
     }
 }
